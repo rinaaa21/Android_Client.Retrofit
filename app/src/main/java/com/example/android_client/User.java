@@ -7,6 +7,14 @@ public class User {
     private String prodi;
     private String fakultas;
 
+    public User(int id, String name, String email, String prodi, String fakultas) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.prodi = prodi;
+        this.fakultas = fakultas;
+    }
+
     public User(String name, String email, String prodi, String fakultas) {
         this.name = name;
         this.email = email;
@@ -16,6 +24,10 @@ public class User {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
